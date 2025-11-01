@@ -1,0 +1,161 @@
+/* 引入更专业的字体，让中英文显示都更美观 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #007bff; /* 主题蓝色，源于PDF */
+    --secondary-color: #00b894; /* 辅助绿色/青色 */
+    --text-color: #333333;
+    --bg-light: #f8f9fa;
+    --bg-white: #ffffff;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--bg-white);
+}
+
+/* --- 导航栏 --- */
+header {
+    background: var(--bg-white);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* 导航栏吸顶效果 */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* --- 通用容器和分区样式 --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+section:nth-child(even) {
+    background-color: var(--bg-light);
+}
+
+h2.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+/* 给标题加一个装饰下划线 */
+h2.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 10px auto 0;
+}
+
+p.section-subtitle {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* --- 特定分区样式 --- */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.imgur.com/7bJ1wzL.jpeg') no-repeat center center/cover;
+    color: white;
+    padding: 120px 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* 合作伙伴 Logo 墙 */
+.partners-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.partner-logo img {
+    height: 50px; /* 统一高度 */
+    filter: grayscale(100%); /* 默认灰色 */
+    transition: all 0.3s ease;
+}
+
+.partner-logo img:hover {
+    filter: grayscale(0%); /* 鼠标悬浮时变彩色 */
+    transform: scale(1.1);
+}
+
+/* 联系我们区域 */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+}
+
+.contact-info .details {
+    max-width: 500px;
+}
+
+.contact-info img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+/* --- 页脚 --- */
+footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
