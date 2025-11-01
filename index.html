@@ -4,120 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>东利集团 (Donglee Group) - 关爱每一步 | Foot-Care Solutions</title>
-    <style>
-        /* 这是一些非常基础的样式，为了让框架看起来不那么简陋。后续我们会用专业的CSS文件替换它。 */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-        }
-        header {
-            background: #fff;
-            padding: 1rem 2rem;
-            border-bottom: 1px solid #eee;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header .logo {
-            font-weight: bold;
-            font-size: 1.5rem;
-            color: #007BFF; /* 暂时用蓝色代替Logo图片 */
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #555;
-        }
-        section {
-            padding: 60px 20px;
-            text-align: center;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        section:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        h1, h2 {
-            margin-bottom: 20px;
-        }
-        .hero {
-            background: url('https://i.imgur.com/7bJ1wzL.jpeg') no-repeat center center/cover; /* 我帮你把跑步图上传了，暂时用这个链接 */
-            color: white;
-            padding: 100px 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        .hero h1 {
-            font-size: 3rem;
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    <!-- 链接我们刚刚创建的样式文件 -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">DONGLEE GROUP</div>
-        <nav>
-            <a href="#home">首页</a>
-            <a href="#about">关于我们</a>
-            <a href="#products">产品中心</a>
-            <a href="#tech">核心技术</a>
-            <a href="#partners">合作伙伴</a>
-            <a href="#contact">联系我们</a>
-        </nav>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="logo">DONGLEE</div>
+            <nav>
+                <a href="#home">首页</a>
+                <a href="#about">关于我们</a>
+                <a href="#products">产品中心</a>
+                <a href="#tech">核心技术</a>
+                <a href="#partners">合作伙伴</a>
+                <a href="#contact">联系我们</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <!-- 1. 英雄/主视觉区域 -->
+        <!-- 1. 主视觉区域 -->
         <section id="home" class="hero">
             <h1>Caring, Every Step</h1>
             <p>我们专注于足部健康产品的研发与生产，通过科技创新为您提供极致的舒适与支持。</p>
         </section>
 
-        <!-- 2. 关于我们简介 -->
+        <!-- 2. 关于我们 -->
         <section id="about">
-            <h2>关于东利集团</h2>
-            <p>成立于2004年，总部位于中国广州，是一家专注于足部健康产品研发、生产的国家高新技术企业...</p>
-            <a href="#">了解更多 &rarr;</a>
+            <div class="container">
+                <h2 class="section-title">关于东利集团</h2>
+                <p class="section-subtitle">
+                    成立于2004年，总部位于中国广州，是一家专注于足部健康产品研发、生产的国家高新技术企业。我们致力于为全球市场提供高品质的OEM和ODM服务，凭借先进的技术研究和智能制造，赢得了国内外客户的广泛认可和赞誉。
+                </p>
+                <!-- 未来可以在这里添加认证证书图片 -->
+            </div>
         </section>
 
-        <!-- 3. 产品分类 -->
+        <!-- 3. 产品中心 (占位) -->
         <section id="products">
-            <h2>我们的产品</h2>
-            <p>从智能运动到专业矫形，满足您不同场景下的足部健康需求。</p>
-            <!-- 这里未来会放产品分类的卡片 -->
+            <div class="container">
+                <h2 class="section-title">产品中心</h2>
+                <p class="section-subtitle">从智能运动到专业矫形，满足您不同场景下的足部健康需求。</p>
+                <!-- 这里未来会放产品分类的卡片式链接 -->
+            </div>
         </section>
 
-        <!-- 4. 核心技术 -->
+        <!-- 4. 核心技术 (占位) -->
         <section id="tech">
-            <h2>核心技术</h2>
-            <p>凭借3D打印、智能步态监测和生物力学分析，我们为您提供个性化的足部解决方案。</p>
-            <!-- 这里未来会放技术亮点的介绍 -->
+            <div class="container">
+                <h2 class="section-title">核心技术</h2>
+                <p class="section-subtitle">凭借3D打印、智能步态监测和生物力学分析，我们为您提供个性化的足部解决方案。</p>
+                <!-- 这里未来会放技术亮点的介绍 -->
+            </div>
         </section>
 
         <!-- 5. 合作伙伴 -->
         <section id="partners">
-            <h2>我们的合作伙伴</h2>
-            <p>我们很荣幸能为全球众多知名品牌提供高质量的OEM/ODM服务。</p>
-            <!-- 这里未来会放合作伙伴的Logo墙 -->
+            <div class="container">
+                <h2 class="section-title">我们的合作伙伴</h2>
+                <p class="section-subtitle">我们很荣幸能为全球众多知名品牌提供高质量的OEM/ODM服务。</p>
+                <div class="partners-grid">
+                    <div class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Scholl_logo.svg" alt="Scholl"></div>
+                    <div class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/1280px-Walmart_logo.svg.png" alt="Walmart"></div>
+                    <div class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Costco_Wholesale_logo_2010-10-26.svg/1280px-Costco_Wholesale_logo_2010-10-26.svg.png" alt="Costco"></div>
+                    <div class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/CVS_Health_Logo.svg/1280px-CVS_Health_Logo.svg.png" alt="CVS"></div>
+                    <div class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Aldi_S%C3%BCd_logo.svg/1280px-Aldi_S%C3%BCd_logo.svg.png" alt="ALDI"></div>
+                    <div class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Woolworths_logo.svg/1280px-Woolworths_logo.svg.png" alt="Woolworths"></div>
+                </div>
+            </div>
         </section>
 
         <!-- 6. 联系我们 -->
         <section id="contact">
-            <h2>联系我们</h2>
-            <p>Email: info@donglee.com</p>
-            <p>地址：中国广州市增城区新塘镇沙埔银沙工业区</p>
+            <div class="container">
+                <h2 class="section-title">联系我们</h2>
+                <div class="contact-info">
+                    <div class="details">
+                        <h3>东利集团 (Donglee Group)</h3>
+                        <p><strong>广州公司:</strong> 中国广州市增城区新塘镇沙埔银沙工业区</p>
+                        <p><strong>越南公司:</strong> 越南同奈省隆富村南同富工业园D3地块</p>
+                        <p><strong>业务邮箱:</strong> <a href="mailto:info@donglee.com">info@donglee.com</a></p>
+                        <p><strong>官网:</strong> <a href="https://www.donglee.com" target="_blank">https://www.donglee.com</a></p>
+                    </div>
+                    <div>
+                        <p><strong>扫码联系我们 (微信):</strong></p>
+                        <!-- 这里使用你上传的图片 -->
+                        <img src="微信.png" alt="老板微信二维码">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Donglee Group. All Rights Reserved. | 网站由 ZemJun 在 GitHub Pages 上搭建</p>
+        <div class="container">
+            <p>&copy; 2025 Donglee Group. All Rights Reserved. | <a href="https://github.com/ZemJun/ZemJun.github.io" target="_blank">网站源码</a></p>
+        </div>
     </footer>
 
 </body>
