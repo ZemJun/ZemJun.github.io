@@ -1,3 +1,6 @@
+/* =========================================
+   1. 全局变量与基础设置 (Design Tokens)
+   ========================================= */
 :root {
     --primary-color: #0052cc;       /* 更深邃的科技蓝 */
     --primary-light: #e6f0ff;       /* 浅蓝色背景 */
@@ -31,6 +34,9 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* =========================================
+   2. 导航栏 (Header)
+   ========================================= */
 header {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px);
@@ -68,7 +74,9 @@ header {
     color: var(--bg-white);
 }
 
-
+/* =========================================
+   3. 通用布局与排版 (Layout & Typography)
+   ========================================= */
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -143,6 +151,9 @@ section {
     box-shadow: 0 6px 20px rgba(0, 82, 204, 0.6);
 }
 
+/* =========================================
+   4. 特性卡片区域 (Features)
+   ========================================= */
 .feature-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -189,7 +200,9 @@ section {
     margin: 0;
 }
 
-
+/* =========================================
+   5. 合作伙伴 (Partners) - 极简标签风格
+   ========================================= */
 #partners { background-color: var(--bg-light); }
 
 .partner-tags {
@@ -220,6 +233,9 @@ section {
     transform: translateY(-2px);
 }
 
+/* =========================================
+   6. 联系区域 (Contact) - 深色主题
+   ========================================= */
 #contact {
     background: var(--bg-dark);
     color: var(--bg-white);
@@ -303,6 +319,9 @@ footer {
     font-size: 0.9rem;
 }
 
+/* =========================================
+   7. 动画与响应式 (Animation & Responsive)
+   ========================================= */
 .fade-in-section {
     opacity: 0;
     transform: translateY(30px);
